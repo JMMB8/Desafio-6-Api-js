@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- mis estilos en css-->
+    <link rel="stylesheet" href="./assets/css/stylos.css" />
+    <!-- script graficos chart js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Midicador</title>
+  </head>
+  <body>
+    <div class="cotainer">
+      <hr />
+      <h1>Conversor de monedas Nacioal</h1>
+      <hr />
+      <main>
+        <h3>Pesos CLP</h3>
+        <input
+          type="number"
+          id="ingresarMonto"
+          required
+          placeholder="Ingrese el monto en CLP"
+        />
+        <p>Moneda a convertir:</p>
+
+        <select name="Monedas" id="idMonedas">
+          <option disabled selected value>Seleccione mondea</option>
+          <option value="uf">Unidad de fomento (UF)</option>
+          <option value="euro">Euro</option>
+          <option value="dolar">Dólar observado</option>
+        </select>
+        <div>
+          <button id="btnBuscar">Buscar</button>
+        </div>
+        <p id="resultado">...</p>
+        <span id="errorSpan"></span>
+      </main>
+      <div class="grafica">
+        <canvas id="myChart"> </canvas>
+      </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
